@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: linear-gradient(rgb(191, 125, 253), rgb(92, 32, 119), rgb(201, 184, 201));
+            position: relative;
+            min-width: 100%;
+        }
+
+        main {
+            background-image: linear-gradient(rgb(191, 125, 253), rgb(92, 32, 119), rgb(201, 184, 201));
+
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            margin-bottom: -100px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding-bottom: 10rem;
+        }
+
+        .imagem {
+            
+            background-image: url('imagens/loginImagem.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+
+            
+        }
+
+        .textoCenter {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 40px;
+            padding-bottom: 10px;
+            font-size: 1.1em;
+            font-weight: bold;
+            font-style:  oblique;
+        }
+
+        section {
+            background-color: rgba(99, 43, 228, 0.562);
+            height: 400px;
+            width: 400px;
+            
+        }
+
+        form {
+            margin: auto;
+            text-align: center;
+            height: 100%;
+            width: 90%;
+            padding-top: 120px;
+            background-position: relative;
+            
+          
+        }
+        
+        .botao {
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(252, 199, 25);
+            color: rgb(5, 9, 255);
+            height: 30px;
+            width: 80px;
+            margin-left: 50px;
+        }
+       
+        .label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(252, 199, 25);
+        }
+        
+        #footer {
+            background-color: rgb(200, 164, 211);
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            margin-top: 100px;
+        }
+
+        #textfooter {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="imagem">
+            <div class="textoCenter">Faça Login</div>
+            <section>
+                <form action="recebe-dados.php" method="post">
+                    <label for="nome" class="label">Usuário: </label>
+                    <input type="email" name="email" id="email" required><br><br>
+                    <label for="senha" class="label">Senha:</label>
+                    <input type="password" name="senha" id="senha" required size="18"><br><br>
+                    <button type="submit" class="botao">Entrar</button>
+                </form><br>
+            </section>
+            <div class="textoCenter"><p>Esqueceu a senha ou email. <a href="#">Clique Aqui!</a></p></div>
+        </div>
+        
+    </main>
+
+    <footer id="footer">
+        <div id="textfooter">
+            <p>Todos os direitos reservados</p>
+            <p>Site criado por Wanderson Souza</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
